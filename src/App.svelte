@@ -1,11 +1,13 @@
 <script lang="ts">
   import Image from "./lib/Image.svelte";
   import Controller from "./lib/Controller.svelte";
+  import RepoLink from "./lib/RepoLink.svelte";
 </script>
 
 <h1 class="title">realistic shadow</h1>
 <Image />
 <Controller />
+<RepoLink />
 
 <style lang="less" global>
   :root {
