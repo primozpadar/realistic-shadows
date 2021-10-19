@@ -1,5 +1,5 @@
 {
-  "name": "realistic-shadow",
+  "name": "realistic-shadows",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -18,5 +18,8 @@
     "tslib": "^2.2.0",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.5.0"
   }
 }
