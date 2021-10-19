@@ -36,14 +36,14 @@
 <style lang="less">
   .wrapper {
     background: var(--white);
-    padding: 6rem 4rem;
+    padding: 5rem 2rem;
     border-radius: var(--radius);
     display: flex;
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.6));
 
     .img-wrapper {
       width: 400px;
-      height: 400px;
+      height: 300px;
       position: relative;
 
       &:first-child {
@@ -57,7 +57,7 @@
       z-index: 100;
       object-fit: contain;
       width: 400px;
-      height: 400px;
+      height: 300px;
     }
 
     .img-real-shadow {

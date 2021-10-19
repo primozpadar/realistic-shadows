@@ -1,16 +1,17 @@
 <script lang="ts">
   import { shadow, imageUrl } from "../store";
+  import Input from "./Input.svelte";
 </script>
 
 <div class="controller">
   <div class="row">
-    <input type="number" bind:value={$shadow.x} />
-    <input type="number" bind:value={$shadow.y} />
-    <input type="number" bind:value={$shadow.spread} />
-    <input type="number" bind:value={$shadow.blur} />
+    <Input type="number" label="X" bind:value={$shadow.x} />
+    <Input type="number" label="Y" bind:value={$shadow.y} />
+    <Input type="number" label="Spread" bind:value={$shadow.spread} />
+    <Input type="number" label="Blur" bind:value={$shadow.blur} />
   </div>
   <div class="row">
-    <input type="text" bind:value={$imageUrl} />
+    <Input type="text" label="Image URL" bind:value={$imageUrl} />
   </div>
   <p>
     Try /parrot.jpeg, /palms.jpeg or /portrait.jpeg or paste in any other URL
@@ -36,17 +37,6 @@
       &:not(:last-child) {
         margin-bottom: 1.4rem;
       }
-    }
-
-    input {
-      padding: 0.6rem;
-      outline: none;
-      width: 100%;
-      color: var(--teal);
-      background: var(--gray);
-      border: 1px solid var(--teal);
-      font-weight: bold;
-      border-radius: 0.2rem;
     }
   }
 </style>
